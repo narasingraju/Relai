@@ -1,0 +1,27 @@
+<h1>Hello clients from Hyderabad</h1>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= "Name"%></th>
+    <th><%= "Location"%></th>
+    <th><%= "Etablished"%></th>
+    <th><%= "Strength"%></th>
+    <th><%= "Rating" %></th>
+  </thead>
+  <tbody>
+  <% @clients.each do |p| %>
+    <tr>
+      <td><%= p.client_name %></td>
+      <td><%= p.c_location %></td>
+      <td><%= p.c_started_on %></td>
+      <td><%= p.no_of_employees %></td>
+      <td><%= p.c_rating %></td>
+      <td><%= link_to 'Edit',edit_client_path(p) %></td>
+      <td><%= link_to 'Show',client_path(p) %></td>
+      <td><%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+  </tr>  
+  </tbody>
+</table>
+<%#= link_to 'New Product',new_product_path %>

@@ -1,0 +1,22 @@
+<%= form_for @client do |f| %>
+  <div class="field">
+    <%= f.label :Client %>
+    <%= f.text_field :client_name %></br>
+
+    <%= f.label :Location %>
+    <%= f.text_field :c_location%></br>
+
+    <%= f.label :Rating %>
+    <%= f.text_field :c_rating %></br>
+
+    <%= f.label :Established %>
+    <%= f.date_field :c_started_on %></br>
+
+    <%= f.label :Strength %>
+    <%= f.text_field :no_of_employees %></br>
+
+    <%= f.submit %>
+
+
+  </div>
+<% end %>

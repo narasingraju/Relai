@@ -1,0 +1,18 @@
+<h1>Hello clients from Hyderabad</h1>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= "Location"%></th>
+    <th><%= "Rating" %></th>
+  </thead>
+  <tbody>
+  <% @client.each do |p| %>
+    <tr>
+      <td><%= p.c_location %></td>
+      <td><%= p.c_rating %></td>
+  <% end %>
+  </tr>  
+  </tbody>
+</table>
+<%#= link_to 'New Product',new_product_path %>
