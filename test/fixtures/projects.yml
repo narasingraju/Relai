@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  P_name: MyString
+  p_duration: 1
+
+two:
+  P_name: MyString
+  p_duration: 1
